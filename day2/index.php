@@ -1,11 +1,12 @@
 <?php
-
-   
     require_once("config.php");
+    require_once("functions.php");
     $error ="";
 if (!empty($_POST)){
    $error = validate_form();
    if(empty($error)){
+    $date=date("F j Y g:i a");
+    save_to_file($date);
     print_confirmation();
     exit();
    }
@@ -59,4 +60,8 @@ function remember_var($var){
     }
   }
 
-  require_once("views/contact.php");
+
+ // require_once(realpath(dirname(__FILE__) . '/views/contact.php'));
+
+  require_once(realpath(dirname(__FILE__) . '/views/users.php'));
+     
