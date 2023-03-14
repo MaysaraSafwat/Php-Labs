@@ -1,6 +1,6 @@
 <?php
 require_once("vendor/autoload.php");
+session_start();
 
-var_dump(_THANK_YOU_MSG);
 
 require_once("views/counter.php");
