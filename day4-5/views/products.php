@@ -12,6 +12,6 @@ var_dump($items);
     <title>Document</title>
 </head>
 <body>
-    hellooo bitch!
+    
 </body>
 </html>
